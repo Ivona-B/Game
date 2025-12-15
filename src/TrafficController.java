@@ -61,7 +61,7 @@ public class TrafficController {
             boolean atStopLine =
                     car.getX() + car.getWidth() >= stopX && beforeIntersection;
 
-            if (!horizontalLight.isGreen() && atStopLine) {
+            if (!horizontalLight.isYelloworGreen() && atStopLine) {
                 mustStop = true;
             }
 
@@ -97,7 +97,7 @@ public class TrafficController {
             boolean atStopLine =
                     car.getY() + car.getHeight() >= stopY && beforeIntersection;
 
-            if (!verticalLight.isGreen() && atStopLine) {
+            if (!verticalLight.isYelloworGreen() && atStopLine) {
                 mustStop = true;
             }
 

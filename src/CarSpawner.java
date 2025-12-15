@@ -45,12 +45,12 @@ public class CarSpawner {
         int maxPerDirection = 10;
 
         if (horizontalCount < maxPerDirection && now >= nextHorizontalSpawnTime) {
-            cars.add(Car.createHorizontal(-120, height / 2 - 25, carSpeed));
+            cars.add(CarFactory.createHorizontal(-120, height / 2 - 25, carSpeed));
             nextHorizontalSpawnTime = now + randomSpawnInterval(level);
         }
 
         if (verticalCount < maxPerDirection && now >= nextVerticalSpawnTime) {
-            cars.add(Car.createVertical(width / 2 - 25, -120, carSpeed));
+            cars.add(CarFactory.createVertical(width / 2 - 25, -120, carSpeed));
             nextVerticalSpawnTime = now + randomSpawnInterval(level);
         }
     }

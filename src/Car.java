@@ -23,13 +23,6 @@ public class Car {
         this.speed = maxSpeed;
     }
 
-    public static Car createHorizontal(int x, int y, double speed) {
-        return new Car(x, y, Direction.HORIZONTAL, speed);
-    }
-
-    public static Car createVertical(int x, int y, double speed) {
-        return new Car(x, y, Direction.VERTICAL, speed);
-    }
 
     public void update(boolean mustStop) {
         if (mustStop) {

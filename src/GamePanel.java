@@ -130,10 +130,10 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
             return;
         }
 
-        // 1) genruoti naujas masinas
+        //  generate naujas masinas
         spawner.spawnCars(cars, carSpeed, level, now);
 
-        // 2) atnaujina judejima, atstum.
+        //  atnaujina judejima, atstum.
         controller.updateCars(cars, horizontalLight, verticalLight);
 
         if (controller.checkCollisions(cars)) {

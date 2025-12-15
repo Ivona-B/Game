@@ -28,6 +28,10 @@ public class TrafficLight {
         return state == State.GREEN;
     }
 
+    public boolean isYelloworGreen() {
+        return state == State.YELLOW || state == State.GREEN;
+    }
+
     public void draw(Graphics2D g2) {
         g2.setColor(Color.DARK_GRAY);
         g2.fillRoundRect(x, y, 30, 90, 10, 10);
